@@ -395,7 +395,7 @@ footer ul li a:after {
 }
 
 footer ul li a:hover:after {
-    background-color: #1004c5;
+    background-color: #CE8692;
     -webkit-transform: scaleX(1);
     transform: scaleX(1)
 }
@@ -539,7 +539,7 @@ footer ul li a:hover:after {
   margin-bottom: 3.2em;
   font-size: 1em;
   color: white;
-  background-color: #1004c5;
+  background-color: #CE8692;
   width: max-content;
   padding: 0.4em;
   border-radius: 100px;
@@ -562,7 +562,7 @@ footer ul li a:hover:after {
   transition: 0.8s;
 }
 #form form input:focus { 
-  border: 1.2px solid #1004c5;
+  border: 1.2px solid #CE8692;
 }
 #form form textarea { 
   width: 90%;
@@ -577,7 +577,7 @@ footer ul li a:hover:after {
   font-weight: lighter;
 }
 #form form button{ 
-  background-color: #1004c5;
+  background-color: #CE8692;
   color: white;
   border: 0px transparent;
   font-size: 1.4em;
