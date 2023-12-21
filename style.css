@@ -323,7 +323,7 @@ a.button-slide:before {
     -webkit-transition: inherit;
     transition: inherit;
     content: attr(data-hover);
-    color: rgb(3, 42, 233)
+    color: rgb(206, 134, 146)
 }
 
 a.button-slide:hover,a.button-slide:focus {
