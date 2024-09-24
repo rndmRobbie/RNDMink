@@ -9,21 +9,21 @@
 </head>
 <body>
     <header>
-        <div class="logo">
+        <div class="logo glitch-text">
             <h1>RNDM Architects</h1>
         </div>
         <nav>
-            <ul>
-                <li><a href="https://twitter.com/ArchiRobbie" target="_blank">Twitter</a></li>
-                <li><a href="https://instagram.com/ArchiRobbie" target="_blank">Instagram</a></li>
-                <li><a href="https://discord.gg/ArchiRobbie" target="_blank">Discord</a></li>
+            <ul class="social-media">
+                <li><a href="https://twitter.com/ArchiRobbie" target="_blank" class="glitch-text">Twitter</a></li>
+                <li><a href="https://instagram.com/ArchiRobbie" target="_blank" class="glitch-text">Instagram</a></li>
+                <li><a href="https://discord.gg/ArchiRobbie" target="_blank" class="glitch-text">Discord</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="rooms">
-            <h2>Virtual Rooms</h2>
+            <h2 class="glitch-text">Virtual Rooms</h2>
             
             <div class="room" onclick="openRoom('room1')">
                 <img src="room1-logo.png" alt="Room 1 Logo">
@@ -60,9 +60,9 @@
         </section>
 
         <div id="room-detail" class="hidden">
-            <div class="room-content">
-                <span class="close" onclick="closeRoom()">&times;</span>
-                <h2 id="room-title">Room Title</h2>
+            <div class="room-content glitch-box">
+                <span class="close glitch-text" onclick="closeRoom()">&times;</span>
+                <h2 id="room-title" class="glitch-text">Room Title</h2>
                 <p id="room-description">Room Description</p>
                 <div class="room-images">
                     <img src="room1-photo1.png" alt="Room 1 Photo 1">
@@ -72,9 +72,9 @@
         </div>
     </main>
 
-    <footer>
-        <p>Contact us at: <a href="mailto:contact@rndmarchitects.com">contact@rndmarchitects.com</a></p>
-        <p><a href="https://discord.gg/ArchiRobbie" target="_blank">Join our Discord</a></p>
+    <footer class="glitch-text">
+        <p>Contact us at: <a href="mailto:contact@rndmarchitects.com" class="glitch-text">contact@rndmarchitects.com</a></p>
+        <p><a href="https://discord.gg/ArchiRobbie" target="_blank" class="glitch-text">Join our Discord</a></p>
     </footer>
 
     <script src="script.js"></script>
