@@ -1,0 +1,14 @@
+.rooms {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.room {
+    padding: 10px;
+    background-color: #222;
+    border: 2px solid #00ff00;
+    cursor: pointer;
+    text-align: center;
+}
