@@ -1,351 +1,58 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-	<!-- 
-		
-                                    Yo, Bretheren. 
-
-                                    This template is made by me, with the intention of providing people who are starting out in web development
-                                    with a simplistic, minimal website to get themselves up online and displaying their projects.
-
-                                    You will find that every section is commented and explains in brief what it does.
-
-                                    It was created out of the goodness of my heart. <3
-
-                                    By all means use this for your own projects, pull it apart, edit it.. claim it as your own work if you want to. However
-                                    I please ask you don't resell it.
-
-                                    If you do, I will find you.. and I will kill you.
-
-                                    Slowly.
-
-									                  Have a splendid day.
-                                    James x
-                                    
-                                    AKA The Countryside Coder
-
-                                          .--..--..--..--..--..--.
-                                        .' \  (`._   (_)     _   \
-                                      .'    |  '._)         (_)  |
-                                      \ _.')\      .----..---.   /
-                                      |(_.'  |    /    .-\-.  \  |
-                                      \     0|    |   ( O| O) | o|
-                                       |  _  |  .--.____.'._.-.  |
-                                       \ (_) | o         -` .-`  |
-                                        |    \   |`-._ _ _ _ _\ /
-                                        \    |   |  `. |_||_|   |
-                                        | o  |    \_      \     |     -.   .-.
-                                        |.-.  \     `--..-'   O |     `.`-' .'
-                                      _.'  .' |     `-.-'      /-.__   ' .-'
-                                    .' `-.` '.|='=.='=.='=.='=|._/_ `-'.'
-                                    `-._  `.  |________/\_____|    `-.'
-                                       .'   ).| '=' '='\/ '=' |
-                                       `._.`  '---------------'
-                                               //___\   //___\
-                                                 ||       ||
-                                                 ||_.-.   ||_.-.
-                                                (_.--__) (_.--__)                               
-        -->
-
-	<!-- The boring part! -->
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>RNDM Architects in RR</title>
-	<meta content="RecRoom portfolio of RNDM Architect's work. We create VR sensory experiences and spaces with an emphasis on the human element. " name="description" property="og:description">
-	
-	<!-- Link to the relevant stylesheet -->
-	<link href="style.css" rel="stylesheet">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <!--[if lte IE 8]>
-      <link href="dist/css/blockIE.css" rel="stylesheet">
-    <![endif]-->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- Load JQuery, as our little script depends on it -->
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,600,400" rel="stylesheet" type="text/css"> <!-- Load our font from Google -->
-  <!-- The JS code block has been moved into the index.js file.  -->
-  <script src="./index.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Virtual Rooms by RNDM Architects">
+    <title>RNDM Architects | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- This calls the little script written above. -->
-  <div class="preloader"></div>
-  <main>
-
-	<!-- The Intro section begins -->
-  <section class="intro">
-
-		<div class="intro-text"> <!-- Seperates the text section from the arrow. -->
-      <div class="Hi">
-				<h1>Hi! 👋  &mdash; We are <span>RNDM Architects</span>, a small <span>developer team</span> dedicated to creating VR spatial experiences inside of RecRoom.</h1> <!-- Insert your text here! -->
-      </div>
-    </div>
-    
-	</section>
-	<!-- Intro section ends -->
-	
-	<!-- The portfolio section begins -->
-  <!-- Please note: all of the following images are from Unsplash. I do not own the rights to them, and I have used them according to Unsplash's
-    href="https://www.github.com/jabedford"
-				rules and regulations. All credits go to original owners/photographers.-->
-
-  <section class="projects">
-    <div class="projects-collage">
-
-			<!-- Project One -->
-      <a class="project-item"  target="_blank">
-        <figure class="project-figure">
-          <div class="project-overlay"></div>
-          <img src="https://img.rec.net/6de8tswot04mzulfwzvssh6x4.jpg">
-          <figcaption class="project-text">
-            <h2>^HITOIRO</h2>
-            <p>The potential of RecRoom Studio</p>
-           <!-- *********************** -->
-            <!-- START OF HIDDEN ELEMENTS -->
-
-            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
-            HINTS: The P tag next
-            First Anchor tag is for the project's github REPO
-            Second Anchor is for the project's live preview  -->
-
-           <p class='hidden popUpdesc'> a Hokkaido onsen sanctuary, where RNDM Architects have stitched serenity into the very fabric of the surroundings. Amidst the hush of snowy landscapes, hot springs narrate tales of tranquility, a space where time pirouettes between reality and dreams. Each room, adorned with a blend of simplicity and comfort, transforms into a portal for contemplation. Hitoiro beckons you to linger, savoring moments akin to turning pages in a Murakami novel.            
-	    View in-game: https://rec.net/room/HITOIRO
-	    Video trailer: https://youtu.be/BhqIuV2DGNs
-	   </p>
-      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
-        <span id="githubRepo" href="https://rec.net/room/HITOIRO"></span>
-        <span id="livePreview" href="https://youtu.be/BhqIuV2DGNs"></span>
-      <!-- *********************** -->
-      <!-- END OF HIDDEN ELEMENTS -->
-          </figcaption>
-        </figure>
-			</a>
-			<!-- Project One Ends -->
-			
-			<!-- Project Two -->
-      <a class="project-item" target="_blank">
-        <figure class="project-figure">
-          <div class="project-overlay"></div>
-          <img src="https://img.rec.net/f0e27gp3xkgvqnii6mtphskk9.jpg">
-          <figcaption class="project-text">
-            <h2>^21grams</h2>
-            <p>Horror sensory experience</p>
-            <!-- *********************** -->
-            <!-- START OF HIDDEN ELEMENTS -->
-
-            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
-            HINTS: The P tag next
-            First Anchor tag is for the project's github REPO
-            Second Anchor is for the project's live preview  -->
-
-           <p class='hidden popUpdesc'> "They say we all lose 21 grams at the exact moment of our death... everyone."
-            This room is RNDM Architects' love letter to the classic PSX horror games we remember and love, put together in Unity and the RRStudio SDK. This is proof of concept for future projects.
-	    View in-game: https://rec.net/room/21grams
-	   </p>
-      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
-        <span id="githubRepo" href="https://rec.net/room/21grams"></span>
-        <span id="livePreview" href="https://rec.net/room/21grams"></span>
-
-      <!-- *********************** -->
-      <!-- END OF HIDDEN ELEMENTS -->
-      </figcaption>
-      </figure>
-			</a>
-			<!-- Project Two Ends -->
-			
-			<!-- Project Three -->
-      <a class="project-item" target="_blank">
-        <figure class="project-figure">
-          <div class="project-overlay"></div>
-          <img src="https://img.rec.net/1ibec8dwnkgjsuugmgfsq5r3a.jpg">
-          <figcaption class="project-text">
-            <h2>^5373N</h2>
-            <p>Particle musical show in VR</p>
-           <!-- *********************** -->
-            <!-- START OF HIDDEN ELEMENTS -->
-
-            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
-            HINTS: The P tag next
-            First Anchor tag is for the project's github REPO
-            Second Anchor is for the project's live preview  -->
-
-           <p class='hidden popUpdesc'> was created as almost an experiment to showcase the use of Unity's particle systems in conjuction with a song almost as a visualizer.
-            Mostly as a 3d, spherical, experience for people to be "inside" of as the animation runs and ends.
-	    View in-game: https://rec.net/room/5373N
-          </p>
-      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
-        <span id="githubRepo" href="https://rec.net/room/5373N"></span>
-        <span id="livePreview" href="https://rec.net/room/5373N"></span>
-
-      <!-- *********************** -->
-      <!-- END OF HIDDEN ELEMENTS -->
-          </figcaption>
-        </figure>
-			</a>
-			<!-- Project Three Ends -->
-			
-			<!-- Project Four -->
-      <a class="project-item" target="_blank">
-        <figure class="project-figure">
-          <div class="project-overlay"></div>
-          <img src="https://img.rec.net/16cs3x5ymkqb5v24t5o9gf9s0.jpg">
-          <figcaption class="project-text">
-            <h2>^Edgerunners_Moon.BD</h2>
-            <p>A moment recreated with MakerPen</p>
-           <!-- *********************** -->
-            <!-- START OF HIDDEN ELEMENTS -->
-
-            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
-            HINTS: The P tag next
-            First Anchor tag is for the project's github REPO
-            Second Anchor is for the project's live preview  -->
-
-           <p class='hidden popUpdesc'> FILE LOADED
-            ... moon.BD
-            ... BRAINDANCE STATUS
-            ... STABLE.
-	                
-	    View in-game: https://rec.net/room/Edgerunners_Moon.BD
-          </p>
-      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
-        <span id="githubRepo" href="https://rec.net/room/Edgerunners_Moon.BD"></span>
-        <span id="livePreview" href="https://rec.net/room/Edgerunners_Moon.BD"></span>
-
-      <!-- *********************** -->
-      <!-- END OF HIDDEN ELEMENTS -->
-          </figcaption>
-        </figure>
-			</a>
-			<!-- Project Four Ends -->
-			
-			<!-- Project Five -->
-      <a class="project-item" target="_blank">
-        <figure class="project-figure">
-          <div class="project-overlay"></div>
-          <img src="https://img.rec.net/8yd7tso1q1jvoge76jct9tbf0.jpg">
-          <figcaption class="project-text">
-            <h2>^SKATEandDESTROY</h2>
-            <p>A CV2 functional skatepark</p>
-           <!-- *********************** -->
-            <!-- START OF HIDDEN ELEMENTS -->
-
-            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
-            HINTS: The P tag next
-            First Anchor tag is for the project's github REPO
-            Second Anchor is for the project's live preview  -->
-
-           <p class='hidden popUpdesc'> RNDM Architects presents Skate and Destroy. ― Yeah right. Skate and Destroy is about skatin'... all out ...or not at all. :: A love letter to the original era of PSX street skating games brought to RR.
-            View in game: https://rec.net/room/SKATEandDestroy
-            Video Trailer: https://www.youtube.com/watch?v=rud5s9oFDR0
-          </p>
-      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
-        <span id="githubRepo" href="https://rec.net/room/SKATEandDestroy"></span>
-        <span id="livePreview" href="https://www.youtube.com/watch?v=rud5s9oFDR0"></span>
-
-      <!-- *********************** -->
-      <!-- END OF HIDDEN ELEMENTS -->
-          </figcaption>
-        </figure>
-			</a>
-			<!-- Project Five Ends -->
-			
-			<!-- Project Six -->
-      <a class="project-item" target="_blank">
-        <figure class="project-figure">
-          <div class="project-overlay"></div>
-          <img src="https://img.rec.net/5oh2k1ocy8vpbtewp08awcpve.jpg">
-          <figcaption class="project-text">
-            <h2>^PodMostom</h2>
-            <p>Our first room in RecRoom</p>
-          <!-- *********************** -->
-            <!-- START OF HIDDEN ELEMENTS -->
-
-            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
-            HINTS: The P tag next
-            First Anchor tag is for the project's github REPO
-            Second Anchor is for the project's live preview  -->
-
-           <p class='hidden popUpdesc'> There once was a party back in the 90s under a bridge... keep an eye out for 90s music night events! Check out the graffiti from multiple creators from around Rec Room. Can you find all of the 90's references? 
-            Visit in-game: https://rec.net/room/PodMostom
-          </p>
-      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
-        <span id="githubRepo" href="https://rec.net/room/PodMostom"></span>
-        <span id="livePreview" href="https://rec.net/room/PodMostom"></span>
-
-      <!-- *********************** -->
-      <!-- END OF HIDDEN ELEMENTS -->
-          </figcaption>
-        </figure>
-			</a>
-			<!-- Project Six Ends -->
-			
-    </div>
-	</section>
-	<!-- Portfolio section ends -->
-	
-	
-	<!-- Contact button section begins -->
-  <section class="content contact">
-    <a class="button-slide" data-hover="rndmracing@gmail.com" href="mailto:rndmracing@gmail.com">
-      <span>Talk To Us 👌</span>
-    </a>
-    <div id='form'>
-      <h1>Tell us how we can help build your project.</h1>
-      <p>And we'll get to you ASAP</p>
-      <!-- <form> 
-        <input type="text" placeholder="Your Awesome Name"> 
-        <input type="email" placeholder="Your cool email address">
-        <textArea placeholder="Message here please">
-        </textArea>
-        <div id='buttonDiv'>
-          <button>Send</button>
+    <header>
+        <div class="logo">
+            <h1>RNDM Architects</h1>
         </div>
-      </form> -->
-    </div>
-    </section>
-	<!-- Contact button section ends-->
-	
-	<!-- Footer section begins - If you do not want links here, you can change the <li> items to just be <p> tags or whatever you require -->
-  <footer>
-    <div class="wrapper">
-      <ul>
-        <li>
-          <a href="https://instagram.com/rndmracing" target="_blank">Instagram</a>
-        </li>
-				<li>
-						<a href="https://youtube.com/@rndmracing" target="_blank">YouTube</a>
-					</li>
-					 <li>
-						<a href="https://discord.gg/6hd7NCys2V" target="_blank">Discord</a>
-					 </li>
-						<li>
-						 <a href="https://rec.net/user/rndmRacing" target="_blank">RecRoom</a>
-						</li>
-							<li>
-						 	 <a href="https://linktr.ee/rndmracing" target="_blank">LinkTree</a>
-							</li>
-      </ul>
-    </div>
-	</footer>
-	<!-- Footer section ends -->
-  </main>
-  <!--This section would ONLY appear when an individual project 'box' is clicked, It gives more detail about the project. it contains-- IMAGE OF THE PROJECT, THE PROJECT'S NAME, THE PROJECT FULL DESCRIPTION, GITHUB LINK && PREVIEW LINK -->
-  <div class="popUp">
-    <div class="popUpImg"></div>
-    <div id="popUpText">
-      <h1>Project's Name</h1>
-      <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <div>
-        <a href="" id="githubLink"></a>
-        <a href="" id="previewLink"></a>
-      </div>
+        <nav>
+            <ul>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://discord.gg" target="_blank">Discord</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    </div>
-    <span id="cancelBtn">X</span>
-  </div>
+    <main>
+        <section class="rooms">
+            <h2>Virtual Rooms</h2>
+            <div class="room" onclick="openRoom('room1')">
+                <img src="room1-logo.png" alt="Room 1 Logo">
+                <h3>Room 1</h3>
+            </div>
+            <div class="room" onclick="openRoom('room2')">
+                <img src="room2-logo.png" alt="Room 2 Logo">
+                <h3>Room 2</h3>
+            </div>
+            <!-- Add more rooms as needed -->
+        </section>
+
+        <div id="room-detail" class="hidden">
+            <div class="room-content">
+                <span class="close" onclick="closeRoom()">&times;</span>
+                <h2 id="room-title">Room Title</h2>
+                <p id="room-description">Room Description</p>
+                <div class="room-images">
+                    <img src="room1-photo1.png" alt="Room 1 Photo 1">
+                    <img src="room1-photo2.png" alt="Room 1 Photo 2">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact us at: <a href="mailto:contact@rndmarchitects.com">contact@rndmarchitects.com</a></p>
+        <p><a href="https://discord.gg" target="_blank">Join our Discord</a></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
-
 </html>
