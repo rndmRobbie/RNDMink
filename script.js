@@ -1,33 +1,55 @@
-function openRoom(roomId) {
-    document.getElementById('room-detail').style.display = 'flex';
+// Data for each room
+const rooms = {
+    room1: {
+        title: "Room 1",
+        description: "This is the description for Room 1. It's a beautifully crafted virtual space with a serene environment.",
+        images: ["room1-1.png", "room1-2.png", "room1-3.png"],
+        link: "https://room1site.com"
+    },
+    room2: {
+        title: "Room 2",
+        description: "Room 2 is an industrial-themed space with sleek design elements and a futuristic vibe.",
+        images: ["room2-1.png", "room2-2.png", "room2-3.png"],
+        link: "https://room2site.com"
+    },
+    // Add data for more rooms here
+};
 
-    if (roomId === 'room1') {
-        document.getElementById('room-title').innerText = 'Room 1';
-        document.getElementById('room-description').innerText = 'This is a description of Room 1.';
-    } else if (roomId === 'room2') {
-        document.getElementById('room-title').innerText = 'Room 2';
-        document.getElementById('room-description').innerText = 'This is a description of Room 2.';
-    } else if (roomId === 'room3') {
-        document.getElementById('room-title').innerText = 'Room 3';
-        document.getElementById('room-description').innerText = 'This is a description of Room 3.';
-    } else if (roomId === 'room4') {
-        document.getElementById('room-title').innerText = 'Room 4';
-        document.getElementById('room-description').innerText = 'This is a description of Room 4.';
-    } else if (roomId === 'room5') {
-        document.getElementById('room-title').innerText = 'Room 5';
-        document.getElementById('room-description').innerText = 'This is a description of Room 5.';
-    } else if (roomId === 'room6') {
-        document.getElementById('room-title').innerText = 'Room 6';
-        document.getElementById('room-description').innerText = 'This is a description of Room 6.';
-    } else if (roomId === 'room7') {
-        document.getElementById('room-title').innerText = 'Room 7';
-        document.getElementById('room-description').innerText = 'This is a description of Room 7.';
-    } else if (roomId === 'room8') {
-        document.getElementById('room-title').innerText = 'Room 8';
-        document.getElementById('room-description').innerText = 'This is a description of Room 8.';
+let currentImageIndex = 0;
+let currentRoomId = "";
+
+// Function to open a room modal
+function openRoom(roomId) {
+    const room = rooms[roomId];
+    if (room) {
+        currentRoomId = roomId;
+        document.getElementById("roomTitle").innerText = room.title;
+        document.getElementById("roomDescription").innerText = room.description;
+        document.getElementById("roomImage").src = room.images[0];
+        document.getElementById("roomLink").href = room.link;
+        currentImageIndex = 0;
+        document.getElementById("roomModal").style.display = "flex";
     }
 }
 
+// Function to close the room modal
 function closeRoom() {
-    document.getElementById('room-detail').style.display = 'none';
+    document.getElementById("roomModal").style.display = "none";
+}
+
+// Function to navigate through slideshow
+function nextImage() {
+    const room = rooms[currentRoomId];
+    if (room) {
+        currentImageIndex = (currentImageIndex + 1) % room.images.length;
+        document.getElementById("roomImage").src = room.images[currentImageIndex];
+    }
+}
+
+function prevImage() {
+    const room = rooms[currentRoomId];
+    if (room) {
+        currentImageIndex = (currentImageIndex - 1 + room.images.length) % room.images.length;
+        document.getElementById("roomImage").src = room.images[currentImageIndex];
+    }
 }
