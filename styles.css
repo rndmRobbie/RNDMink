@@ -1,8 +1,8 @@
 /* Global Styles */
 body {
     background-color: #d08494;
-    font-family: 'Helvetica Neue', sans-serif;
-    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    color: #fafafa;
     margin: 0;
     padding: 0;
 }
@@ -10,57 +10,72 @@ body {
 /* Header */
 header {
     text-align: center;
-    padding: 20px;
-    font-size: 2em;
-    color: #5e5e5e;
-    background-color: #f0f0f0;
-}
-
-/* Main Section */
-main {
-    padding: 20px;
-    text-align: center;
+    padding: 50px 0;
+    background-color: #707070;
+    color: #fafafa;
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
 /* Portfolio */
-.portfolio {
-    margin-top: 40px;
+main {
+    padding: 40px;
+    text-align: center;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
+.portfolio h2 {
+    margin-bottom: 30px;
+    color: #fafafa;
+    font-size: 2em;
 }
 
-.room {
+/* Cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.card {
     background-color: #f5f5f5;
     padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
-.room:hover {
-    transform: scale(1.05);
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.room img {
+.card img {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-.room h3 {
-    color: #5e5e5e;
-    margin-top: 10px;
+.card h3 {
+    color: #707070;
+    margin-top: 15px;
+    font-size: 1.2em;
 }
 
 /* Footer */
 footer {
-    padding: 10px;
-    background-color: #f0f0f0;
-    color: #5e5e5e;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #707070;
+    color: #fafafa;
     text-align: center;
-    margin-top: 20px;
+}
+
+footer a {
+    color: #fafafa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
