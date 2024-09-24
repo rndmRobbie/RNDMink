@@ -1,3 +1,57 @@
+/* Global styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Glitch text effect */
+.glitch-text {
+    color: #00ff00;
+    font-size: 1.2em;
+    position: relative;
+    display: inline-block;
+    animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #00ff00; }
+    50% { text-shadow: -2px -2px #00ff00, 2px 2px #00ff00; }
+    100% { text-shadow: 2px 2px #00ff00; }
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #111;
+    border-bottom: 2px solid #00ff00;
+}
+
+header .logo {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
 .rooms {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -6,9 +60,78 @@
 }
 
 .room {
-    padding: 10px;
-    background-color: #222;
+    padding: 20px;
+    background-color: #111;
     border: 2px solid #00ff00;
     cursor: pointer;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.room:hover {
+    transform: scale(1.05);
+}
+
+.room img {
+    width: 100%;
+    height: auto;
+}
+
+/* Room Detail Modal */
+#room-detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #00ff00;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.room-content {
+    background-color: #111;
+    padding: 20px;
+    border: 2px solid #00ff00;
+    max-width: 800px;
+    box-shadow: 0 0 10px #00ff00;
+    animation: glitch-box 1.5s infinite;
+}
+
+@keyframes glitch-box {
+    0%, 100% { box-shadow: 0 0 10px #00ff00; }
+    50% { box-shadow: 0 0 20px #00ff00; }
+}
+
+.room-content .close {
+    font-size: 2em;
+    cursor: pointer;
+    float: right;
+}
+
+.room-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.room-images img {
+    width: 200px;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    padding: 10px;
+    background-color: #111;
+    text-align: center;
+    border-top: 2px solid #00ff00;
+    margin-top: 20px;
+}
+
+/* Glitch box effect */
+.glitch-box {
+    animation: glitch-box 1.5s infinite;
 }
