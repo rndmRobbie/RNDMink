@@ -2,8 +2,8 @@
 body {
     background-color: #000000;
     color: #d08494;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
+    font-family: 'VT323', monospace;  /* Apply retro font */
+    font-size: 18px;
     margin: 0;
     padding: 0;
 }
@@ -56,3 +56,4 @@ body {
 .terminal p {
     animation: glitch 1.5s infinite;
 }
+'''
