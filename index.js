@@ -1,15 +1,16 @@
+
 // Typing effect function
 const text = [
-    "------------------------------------------------",
-    "|                                               |",
-    "|  RNDM Architects                              |",
-    "|  Designing spatial experiences in VR (RecRoom)|",
-    "|                                               |",
+    "-------------------------------------------------",
+    "|                                                |",
+    "|  RNDM Architects                               |",
+    "|  Designing spatial experiences in VR (RecRoom) |",
+    "|                                                |",
     "| > ls                                           |",
     "|   contact.txt                                  |",
     "|   examples                                     |",
     "|   social_links                                 |",
-    "|                                               |",
+    "|                                                |",
     "| > open examples                                |",
     "|   example-room-1.link                          |",
     "|   example-room-2.link                          |",
@@ -19,11 +20,11 @@ const text = [
     "|   example-room-6.link                          |",
     "|   example-room-7.link                          |",
     "|   example-room-8.link                          |",
-    "|                                               |",
+    "|                                                |",
     "| > cat contact.txt                              |",
-    "|   email: contact@rndmarchitects.com            |",
-    "|   discord: discord.gg/ArchiRobbie              |",
-    "|                                               |",
+    "|   email: ArchiRobbie@gmail.com                 |",
+    "|   discord: discord.gg/fsWmyaB7tn               |",
+    "|                                                |",
     "| > open social_links                            |",
     "|   twitter: @ArchiRobbie                        |",
     "|   instagram: @ArchiRobbie                      |",
@@ -31,14 +32,14 @@ const text = [
     "|   twitch: @ArchiRobbie                         |",
     "|   youtube: @ArchiRobbie                        |",
     "|   kick: @ArchiRobbie                           |",
-    "|   discord: discord.gg/ArchiRobbie              |",
-    "|                                               |",
-    "------------------------------------------------"
+    "|   discord: @ArchiRobbie                        |",
+    "|                                                |",
+    "-------------------------------------------------"
 ];
 
 let index = 0;
 let lineIndex = 0;
-const typingSpeed = 40;  // Speed in ms
+const typingSpeed = 2;  // Speed in ms
 
 // Typing effect
 function typeText() {
