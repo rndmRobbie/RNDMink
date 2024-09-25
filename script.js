@@ -1,4 +1,3 @@
-js_content = '''
 // Typing effect function
 const text = [
     "------------------------------------------------",
@@ -62,4 +61,3 @@ function typeText() {
 }
 
 document.addEventListener('DOMContentLoaded', typeText);
-'''
